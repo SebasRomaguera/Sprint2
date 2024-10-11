@@ -1,0 +1,63 @@
+Pseudocódigo Sprint2
+INICIO
+
+    // Declarar las dimensiones de la piscina 1
+    Largo_P1 ← 300  // Largo de la piscina 1
+    Ancho_P1 ← 150  // Ancho de la piscina 1
+    Profundidad_P1 ← 20  // Profundidad de la piscina 1
+
+    // Declarar las dimensiones de la piscina 2
+    Largo_P2 ← 300  // Largo de la piscina 2
+    Ancho_P2 ← 80   // Ancho de la piscina 2
+    Profundidad_P2 ← 35  // Profundidad de la piscina 2
+
+    // Calcular el área de las piscinas
+    Area_P1 ← Largo_P1 * Ancho_P1  // Área de la piscina 1
+    Area_P2 ← Largo_P2 * Ancho_P2  // Área de la piscina 2
+
+    // Mostrar el área de ambas piscinas
+    MOSTRAR "El área de la piscina 1 es: " + Area_P1
+    MOSTRAR "El área de la piscina 2 es: " + Area_P2
+
+    // Calcular el volumen de las piscinas
+    Volumen_P1 ← Area_P1 * Profundidad_P1  // Volumen de la piscina 1
+    Volumen_P2 ← Area_P2 * Profundidad_P2  // Volumen de la piscina 2
+
+    // Mostrar el volumen de ambas piscinas
+    MOSTRAR "El volumen de la piscina 1 es: " + Volumen_P1
+    MOSTRAR "El volumen de la piscina 2 es: " + Volumen_P2
+
+    // Calcular las dimensiones cuando las dos piscinas están lado a lado
+    Largo_P2P1 ← Largo_P1  // El largo se mantiene
+    Ancho_P2P1 ← Ancho_P1 + Ancho_P2  // Los anchos se suman
+
+    // Mostrar el ancho y largo de las piscinas juntas
+    MOSTRAR "El ancho de las piscinas juntas es: " + Ancho_P2P1
+    MOSTRAR "El largo de las piscinas juntas es: " + Largo_P2P1
+
+    // Calcular el área total de ambas piscinas
+    AreaP1P2 ← Area_P1 + Area_P2  // Sumar las áreas
+
+    // Mostrar el área combinada
+    MOSTRAR "El área total de las dos piscinas es: " + AreaP1P2
+
+    // Calcular el volumen total de ambas piscinas
+    VolumenP1P2 ← Volumen_P1 + Volumen_P2  // Sumar los volúmenes
+
+    // Mostrar el volumen combinado
+    MOSTRAR "El volumen total de las dos piscinas es: " + VolumenP1P2
+
+    // Intercambiar profundidades de las dos piscinas
+    AUX ← Profundidad_P1  // Guardar profundidad de P1 en auxiliar
+    Profundidad_P1 ← Profundidad_P2  // Asignar la profundidad de P2 a P1
+    Profundidad_P2 ← AUX  // Asignar la profundidad guardada de P1 a P2
+
+    // Recalcular el volumen de las piscinas con las nuevas profundidades
+    Volumen_P1 ← Area_P1 * Profundidad_P1  // Nuevo volumen para P1
+    Volumen_P2 ← Area_P2 * Profundidad_P2  // Nuevo volumen para P2
+
+    // Mostrar los nuevos volúmenes tras el intercambio
+    MOSTRAR "El nuevo volumen de la piscina 1 es: " + Volumen_P1
+    MOSTRAR "El nuevo volumen de la piscina 2 es: " + Volumen_P2
+
+FIN
